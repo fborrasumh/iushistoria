@@ -70,7 +70,7 @@ ORCID: Fernando Borrás Rocher [0000-0002-5519-4573](https://orcid.org/0000-0002
 
 ## Cómo citar
 
-Borrás Rocher, F., Pérez Juan, J. A. y Moreno Tejada, S. (2026). *IusHistorIA* (v1.0.0) [Software]. DOI: [10.5281/zenodo.23830365](https://doi.org/10.5281/zenodo.23830365)
+Borrás Rocher, F., Pérez Juan, J. A. y Moreno Tejada, S. (2026). *IusHistorIA* (v1.1.0) [Software]. DOI: [10.5281/zenodo.23830365](https://doi.org/10.5281/zenodo.23830365)
 
 ## Licencia
 
