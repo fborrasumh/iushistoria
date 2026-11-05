@@ -540,7 +540,7 @@ table{border-collapse:collapse;width:100%;font-size:13.8px}th{background:var(--p
   </div>
   <div class="grid2" style="margin-top:16px">
     <div class="card"><h3 data-i18n="Lo que hace el código y lo que hace la IA">Lo que hace el código y lo que hace la IA</h3><ul class="ih-ul" data-i18n="ini.codigo"><li>El <b>código</b> corrige la práctica, elige la siguiente actividad, detecta los conceptos clave de tu redacción y comprueba que cada cita existe.</li><li>La <b>IA</b> (opcional, con tu clave) comenta tus comentarios y respuestas. Nunca pone nota: si lo intenta, el código lo elimina.</li><li>Sin clave y sin conexión funcionan el diagnóstico, la práctica, la cronología, el progreso y el laboratorio (salvo la entrevista).</li></ul></div>
-    <div class="card"><h3 data-i18n="Más">Más</h3><div class="actions" style="margin-top:0"><button class="btn btn-ghost" type="button" data-hub="0"><svg class="i"><use href="#i-calendar"/></svg><span data-i18n="Cronología">Cronología</span></button><button class="btn btn-ghost" type="button" data-hub="1"><svg class="i"><use href="#i-users"/></svg><span data-i18n="Profesorado">Profesorado</span></button></div><p class="help" data-i18n="ini.borrador">El banco de preguntas es un borrador elaborado a partir de la guía docente: el profesorado lo revisa antes de usarlo para evaluar. Si ves un error, avisa a tu profesor o profesora.</p></div>
+    <div class="card"><h3 data-i18n="Más">Más</h3><div class="actions" style="margin-top:0"><button class="btn btn-ghost" type="button" data-hub="0"><svg class="i"><use href="#i-calendar"/></svg><span data-i18n="Cronología">Cronología</span></button><button class="btn btn-ghost" type="button" data-hub="1"><svg class="i"><use href="#i-users"/></svg><span data-i18n="Profesorado">Profesorado</span></button></div><p class="help" data-i18n="ini.borrador">Banco de preguntas elaborado a partir de la guía docente de la asignatura. Si tienes dudas sobre una pregunta, consulta a tu profesor o profesora.</p></div>
   </div>
   <h2 class="sec-title" data-i18n="Laboratorio de Historia del Derecho">Laboratorio de Historia del Derecho</h2>
   <p class="help" data-i18n="lab.lede">Siete actividades para entrenar el oficio del historiador del Derecho: datar, clasificar, aplicar el orden de fuentes de cada época y conectar el pasado con el derecho de hoy.</p>
@@ -583,7 +583,7 @@ table{border-collapse:collapse;width:100%;font-size:13.8px}th{background:var(--p
 <!-- 4 · SIMULACRO DE DESARROLLO -->
 <section class="screen" data-step="4">
   <header class="sh" style="--c:#E4572E"><div class="sh-ico"><svg class="i"><use href="#i-pencil"/></svg></div><div><p class="sh-step" data-i18n="paso4">Paso 4 de 5</p><h2 data-i18n="Simulacro de preguntas de desarrollo">Simulacro de preguntas de desarrollo</h2><p class="sh-lede" data-i18n="sim.lede">Como en el examen: seis preguntas, eliges cuatro (2,5 puntos cada una en el examen real). Según la guía, una respuesta en blanco o que no corresponde a la pregunta impide aprobar. Sin límite de tiempo: el cronómetro es solo orientativo.</p></div></header>
-  <details class="card ih-rub"><summary data-i18n="Qué se valora: rúbrica orientativa">Qué se valora: rúbrica orientativa</summary><div class="table-wrap" id="simRub"></div><p class="help" data-i18n="sim.rub">Borrador elaborado a partir de los criterios de la guía. El profesorado puede adaptarlo; no es la plantilla oficial de corrección.</p></details>
+  <details class="card ih-rub"><summary data-i18n="Qué se valora: rúbrica">Qué se valora: rúbrica</summary><div class="table-wrap" id="simRub"></div><p class="help" data-i18n="sim.rub">Criterios elaborados a partir de la guía docente de la asignatura.</p></details>
   <div class="card"><div class="actions" style="margin-top:0"><button class="btn btn-ghost" id="btnSimNuevo" type="button"><svg class="i"><use href="#i-refresh"/></svg><span data-i18n="Nuevo simulacro">Nuevo simulacro</span></button><label class="fa-chk"><input type="checkbox" id="chkCrono"> <span data-i18n="Mostrar cronómetro">Mostrar cronómetro</span></label><span class="fa-chip" id="crono" hidden aria-live="off"></span></div><div id="simBox"></div>
     <div class="actions"><button class="btn btn-primary" id="btnSimRev" type="button"><svg class="i"><use href="#i-check"/></svg><span data-i18n="Revisar mi entrega">Revisar mi entrega</span></button><button class="btn btn-ghost" id="btnSimFb" type="button"><svg class="i"><use href="#i-sparkles"/></svg><span data-i18n="Pedir comentario a la IA">Pedir comentario a la IA</span></button><button class="btn btn-word" id="btnSimWord" type="button"><svg class="i"><use href="#i-doc"/></svg>Word</button></div><p class="help" id="simEstado" role="status"></p></div>
   <div class="card" id="simRes" aria-live="polite"></div>
@@ -610,7 +610,7 @@ table{border-collapse:collapse;width:100%;font-size:13.8px}th{background:var(--p
   <header class="sh" style="--c:#6B4FD8"><div class="sh-ico"><svg class="i"><use href="#i-users"/></svg></div><div><h2 data-i18n="Profesorado">Profesorado</h2><p class="sh-lede" data-i18n="prof.lede">Alineación de resultados de aprendizaje, analítica de las preguntas a partir de los ficheros anónimos del alumnado y exportación del banco a Moodle.</p></div></header>
   <div class="card"><h3 data-i18n="Alineación: resultados de aprendizaje, unidades y actividades">Alineación: resultados de aprendizaje, unidades y actividades</h3><div class="table-wrap" id="alinBox"></div></div>
   <div class="card"><h3 data-i18n="Analítica de las preguntas">Analítica de las preguntas</h3><p class="help" data-i18n="prof.analitica">Carga los ficheros anónimos que te entregue el alumnado (puedes seleccionar varios a la vez). Se procesan en este navegador: no sale nada. Las propuestas son orientativas: tú decides qué cambiar.</p><div class="actions"><label class="btn btn-ghost" for="fileAnon"><svg class="i"><use href="#i-upload"/></svg><span data-i18n="Cargar ficheros del alumnado">Cargar ficheros del alumnado</span></label><input type="file" id="fileAnon" accept=".json,application/json" multiple hidden><button class="btn btn-ghost btn-sm" id="btnAnaDemo" type="button" data-i18n="Probar con datos ficticios">Probar con datos ficticios</button></div><div id="anaBox" aria-live="polite"></div></div>
-  <div class="card"><h3 data-i18n="Exportar el banco de preguntas">Exportar el banco de preguntas</h3><p class="help" data-i18n="prof.export">En el idioma activo. Revisa las preguntas antes de usarlas para evaluar.</p><div class="actions"><button class="btn btn-ghost" id="btnGift" type="button">Moodle GIFT</button><button class="btn btn-ghost" id="btnXml" type="button">Moodle XML</button><button class="btn btn-word" id="btnBancoWord" type="button"><svg class="i"><use href="#i-doc"/></svg>Word</button></div></div>
+  <div class="card"><h3 data-i18n="Exportar el banco de preguntas">Exportar el banco de preguntas</h3><p class="help" data-i18n="prof.export">En el idioma activo.</p><div class="actions"><button class="btn btn-ghost" id="btnGift" type="button">Moodle GIFT</button><button class="btn btn-ghost" id="btnXml" type="button">Moodle XML</button><button class="btn btn-word" id="btnBancoWord" type="button"><svg class="i"><use href="#i-doc"/></svg>Word</button></div></div>
   <div class="card"><h3 data-i18n="Investigar con estos datos">Investigar con estos datos</h3><div data-i18n="prof.inv"><p>La app genera datos; no produce por sí sola evidencia publicable. Para publicar hacen falta la aprobación del comité de ética de la universidad (en la UMH, la Oficina de Evaluación de Proyectos), el consentimiento informado del alumnado y el cumplimiento del RGPD; idealmente, un diseño preregistrado con grupo de comparación.</p><p>Diccionario de datos del fichero anónimo: <code>seudonimo</code> (aleatorio), <code>app</code>, <code>version</code>, <code>fecha</code>, <code>eventos[]</code> con <code>k</code> (tipo), <code>item</code>, <code>ra</code>, <code>ok</code> (acierto), <code>sel</code> (opción elegida, índice original), <code>ms</code> (tiempo de respuesta), <code>seg</code> (seguridad declarada: 1 poca, 2 media, 3 mucha), <code>diag</code> (diagnóstico) y <code>t</code> (marca de tiempo).</p></div></div>
   <div class="card"><h3 data-i18n="En qué se basa">En qué se basa</h3><ul class="ih-ul" id="cienciaBox"></ul></div>
 </section>
@@ -1455,7 +1455,7 @@ const I18N = {
     "Lo que hace el código y lo que hace la IA": "What the code does and what the AI does",
     "ini.codigo": "<li>The <b>code</b> marks the practice, chooses the next activity, detects the key concepts in your writing and checks that every quote exists.</li><li>The <b>AI</b> (optional, with your key) comments on your commentaries and answers. It never grades: if it tries, the code removes it.</li><li>Without a key and offline, the diagnostic, practice, timeline, progress and lab (except the interview) all work.</li>",
     "Más": "More",
-    "ini.borrador": "The question bank is a draft prepared from the syllabus: the teaching staff review it before using it for assessment. If you spot a mistake, tell your lecturer.",
+    "ini.borrador": "Question bank prepared from the course syllabus. If you have doubts about a question, ask your lecturer.",
     "zl": "<li>Your answers, commentaries and progress, stored in this browser</li><li>Your AI key</li><li>Marking, the adaptive route and downloads</li>",
     "zn": "<li>Only if you ask for feedback: the text or question being commented on, and your writing, with personal data masked</li><li>Before the first send you see what goes out</li>",
     "paso1": "Step 1 of 5",
@@ -1498,7 +1498,7 @@ const I18N = {
     "Cargar ficheros del alumnado": "Load students’ files",
     "Probar con datos ficticios": "Try with fictitious data",
     "Exportar el banco de preguntas": "Export the question bank",
-    "prof.export": "In the active language. Review the questions before using them for assessment.",
+    "prof.export": "In the active language.",
     "Investigar con estos datos": "Doing research with these data",
     "prof.inv": "<p>The app generates data; it does not by itself produce publishable evidence. Publishing requires approval from the university’s ethics committee (at UMH, the Project Evaluation Office), students’ informed consent and GDPR compliance; ideally, a preregistered design with a comparison group.</p><p>Data dictionary of the anonymous file: <code>seudonimo</code> (random), <code>app</code>, <code>version</code>, <code>fecha</code> (date), <code>eventos[]</code> with <code>k</code> (type), <code>item</code>, <code>ra</code> (learning outcome), <code>ok</code> (correct), <code>sel</code> (chosen option, original index), <code>ms</code> (response time), <code>seg</code> (stated confidence: 1 low, 2 medium, 3 high), <code>diag</code> (diagnostic) and <code>t</code> (timestamp).</p>",
     "En qué se basa": "What it is based on",
@@ -1604,8 +1604,6 @@ const I18N = {
     "Práctica": "Practice",
     "Textos": "Texts",
     "Desarrollo": "Essay",
-    "Propuesta medible": "Measurable proposal",
-    "La guía no asocia el RA 010 a ninguna unidad; la app lo vincula a la U4, donde se trata la Codificación.": "The syllabus does not link LO 010 to any unit; the app links it to U4, where Codification is covered.",
     "Datos FICTICIOS de demostración (30 estudiantes simulados).": "FICTITIOUS demonstration data (30 simulated students).",
     "{0} fichero(s) del alumnado.": "{0} student file(s).",
     "Pregunta": "Question",
@@ -1615,8 +1613,8 @@ const I18N = {
     "Dominio medio por resultado de aprendizaje": "Average mastery by learning outcome",
     "Discriminación: correlación entre acertar esta pregunta y acertar el resto (primer intento de cada estudiante). Con pocos estudiantes estas cifras son inestables.": "Discrimination: correlation between getting this question right and getting the rest right (each student’s first attempt). With few students these figures are unstable.",
     "No se han podido leer: {0}": "Could not be read: {0}",
-    "Banco de preguntas (borrador para revisión)": "Question bank (draft for review)",
-    "Borrador elaborado a partir de la guía docente. Debe revisarlo el profesorado antes de usarlo para evaluar.": "Draft prepared from the syllabus. The teaching staff must review it before using it for assessment.",
+    "Banco de preguntas": "Question bank",
+    "Elaborado a partir de la guía docente de la asignatura 1193 Historia del Derecho.": "Prepared from the syllabus of the course 1193 Legal History.",
     "Diagnóstico": "Diagnostic",
     "Comentario": "Commentary",
     "Progreso": "Progress",
@@ -1646,7 +1644,7 @@ const I18N = {
     "Tu clave de IA": "Your AI key",
     "Funciona con OpenAI, Google Gemini o Anthropic Claude. La clave se guarda solo en este navegador y cada persona paga su propio uso. Sin clave funciona todo salvo el comentario de la IA.": "It works with OpenAI, Google Gemini or Anthropic Claude. The key is stored only in this browser and each person pays for their own use. Without a key everything works except AI feedback.",
     "Límites": "Limitations",
-    "El banco de preguntas es un borrador redactado a partir de la guía y pendiente de revisión por el profesorado. Los textos históricos llevan la ortografía modernizada: cotéjalos con la edición que use la asignatura. La IA puede equivocarse. Nada de esto sustituye la evaluación del profesorado.": "The question bank is a draft written from the syllabus and pending review by the teaching staff. The historical texts use modernised spelling: compare them with the edition used in the course. The AI can make mistakes. None of this replaces assessment by the teaching staff.",
+    "Los textos históricos son fragmentos y las citas se comprueban contra la versión que muestra la app. La IA puede equivocarse. Nada de esto sustituye la evaluación del profesorado.": "The historical texts are excerpts and quotes are checked against the version shown in the app. The AI can make mistakes. None of this replaces assessment by the teaching staff.",
     "Clasificación del texto": "Classification of the text",
     "Naturaleza (jurídica, política…), autor, destinatarios, fecha y lugar.": "Nature (legal, political…), author, addressees, date and place.",
     "Contexto histórico-jurídico": "Historical and legal context",
@@ -1680,7 +1678,7 @@ const I18N = {
     "Lo que hace el código y lo que hace la IA": "O que faz o código e o que faz a IA",
     "ini.codigo": "<li>O <b>código</b> corrige a prática, escolhe a atividade seguinte, deteta os conceitos-chave da sua redação e verifica que cada citação existe.</li><li>A <b>IA</b> (opcional, com a sua chave) comenta os seus comentários e respostas. Nunca dá nota: se o tentar, o código elimina-o.</li><li>Sem chave e sem ligação funcionam o diagnóstico, a prática, a cronologia, o progresso e o laboratório (exceto a entrevista).</li>",
     "Más": "Mais",
-    "ini.borrador": "O banco de perguntas é um rascunho elaborado a partir do guia docente: os docentes revêem-no antes de o usar para avaliar. Se vir um erro, avise o seu professor ou professora.",
+    "ini.borrador": "Banco de perguntas elaborado a partir do guia docente da unidade curricular. Se tiver dúvidas sobre uma pergunta, consulte o seu professor ou professora.",
     "zl": "<li>As suas respostas, comentários e progresso, guardados neste navegador</li><li>A sua chave de IA</li><li>A correção, a rota adaptativa e os descarregamentos</li>",
     "zn": "<li>Só se pedir feedback: o texto comentado ou a pergunta, e a sua redação, com os dados pessoais mascarados</li><li>Antes do primeiro envio vê o que sai</li>",
     "paso1": "Passo 1 de 5",
@@ -1723,7 +1721,7 @@ const I18N = {
     "Cargar ficheros del alumnado": "Carregar ficheiros dos estudantes",
     "Probar con datos ficticios": "Experimentar com dados fictícios",
     "Exportar el banco de preguntas": "Exportar o banco de perguntas",
-    "prof.export": "Na língua ativa. Reveja as perguntas antes de as usar para avaliar.",
+    "prof.export": "Na língua ativa.",
     "Investigar con estos datos": "Investigar com estes dados",
     "prof.inv": "<p>A app gera dados; não produz por si só evidência publicável. Para publicar são necessários a aprovação da comissão de ética da universidade (na UMH, a Oficina de Avaliação de Projetos), o consentimento informado dos estudantes e o cumprimento do RGPD; idealmente, um desenho pré-registado com grupo de comparação.</p><p>Dicionário de dados do ficheiro anónimo: <code>seudonimo</code> (aleatório), <code>app</code>, <code>version</code>, <code>fecha</code> (data), <code>eventos[]</code> com <code>k</code> (tipo), <code>item</code>, <code>ra</code> (resultado de aprendizagem), <code>ok</code> (acerto), <code>sel</code> (opção escolhida, índice original), <code>ms</code> (tempo de resposta), <code>seg</code> (segurança declarada: 1 pouca, 2 média, 3 muita), <code>diag</code> (diagnóstico) e <code>t</code> (marca temporal).</p>",
     "En qué se basa": "Em que se baseia",
@@ -1829,8 +1827,6 @@ const I18N = {
     "Práctica": "Prática",
     "Textos": "Textos",
     "Desarrollo": "Desenvolvimento",
-    "Propuesta medible": "Proposta mensurável",
-    "La guía no asocia el RA 010 a ninguna unidad; la app lo vincula a la U4, donde se trata la Codificación.": "O guia não associa o RA 010 a nenhuma unidade; a app liga-o à U4, onde se trata a Codificação.",
     "Datos FICTICIOS de demostración (30 estudiantes simulados).": "Dados FICTÍCIOS de demonstração (30 estudantes simulados).",
     "{0} fichero(s) del alumnado.": "{0} ficheiro(s) dos estudantes.",
     "Pregunta": "Pergunta",
@@ -1840,8 +1836,8 @@ const I18N = {
     "Dominio medio por resultado de aprendizaje": "Domínio médio por resultado de aprendizagem",
     "Discriminación: correlación entre acertar esta pregunta y acertar el resto (primer intento de cada estudiante). Con pocos estudiantes estas cifras son inestables.": "Discriminação: correlação entre acertar esta pergunta e acertar as restantes (primeira tentativa de cada estudante). Com poucos estudantes estes valores são instáveis.",
     "No se han podido leer: {0}": "Não foi possível ler: {0}",
-    "Banco de preguntas (borrador para revisión)": "Banco de perguntas (rascunho para revisão)",
-    "Borrador elaborado a partir de la guía docente. Debe revisarlo el profesorado antes de usarlo para evaluar.": "Rascunho elaborado a partir do guia docente. Os docentes devem revê-lo antes de o usar para avaliar.",
+    "Banco de preguntas": "Banco de perguntas",
+    "Elaborado a partir de la guía docente de la asignatura 1193 Historia del Derecho.": "Elaborado a partir do guia docente da unidade curricular 1193 História do Direito.",
     "Diagnóstico": "Diagnóstico",
     "Comentario": "Comentário",
     "Progreso": "Progresso",
@@ -1871,7 +1867,7 @@ const I18N = {
     "Tu clave de IA": "A sua chave de IA",
     "Funciona con OpenAI, Google Gemini o Anthropic Claude. La clave se guarda solo en este navegador y cada persona paga su propio uso. Sin clave funciona todo salvo el comentario de la IA.": "Funciona com OpenAI, Google Gemini ou Anthropic Claude. A chave é guardada apenas neste navegador e cada pessoa paga a sua própria utilização. Sem chave funciona tudo exceto o comentário da IA.",
     "Límites": "Limites",
-    "El banco de preguntas es un borrador redactado a partir de la guía y pendiente de revisión por el profesorado. Los textos históricos llevan la ortografía modernizada: cotéjalos con la edición que use la asignatura. La IA puede equivocarse. Nada de esto sustituye la evaluación del profesorado.": "O banco de perguntas é um rascunho redigido a partir do guia e pendente de revisão pelos docentes. Os textos históricos têm a ortografia modernizada: confronte-os com a edição usada na unidade curricular. A IA pode enganar-se. Nada disto substitui a avaliação dos docentes.",
+    "Los textos históricos son fragmentos y las citas se comprueban contra la versión que muestra la app. La IA puede equivocarse. Nada de esto sustituye la evaluación del profesorado.": "Os textos históricos são excertos e as citações são verificadas contra a versão que a app mostra. A IA pode enganar-se. Nada disto substitui a avaliação dos docentes.",
     "Clasificación del texto": "Classificação do texto",
     "Naturaleza (jurídica, política…), autor, destinatarios, fecha y lugar.": "Natureza (jurídica, política…), autor, destinatários, data e lugar.",
     "Contexto histórico-jurídico": "Contexto histórico-jurídico",
@@ -1986,8 +1982,8 @@ Object.entries(/*I18N_X*/{
     "lab7": "Question two invented deputies (with your AI key).",
     "Tema que estáis viendo en clase": "Unit you are studying in class",
     "Fecha del examen": "Exam date",
-    "Qué se valora: rúbrica orientativa": "What is assessed: guidance rubric",
-    "sim.rub": "Draft based on the criteria in the syllabus. Teachers may adapt it; it is not the official marking scheme.",
+    "Qué se valora: rúbrica": "What is assessed: rubric",
+    "sim.rub": "Criteria based on the course syllabus.",
     "Laboratorio": "Lab",
     "pl.lede": "You are the judge. The same dispute reaches your court in five different places and times: decide which law it is judged by and in what order each source is used.",
     "ar.lede": "Today’s rules have layers, like an archaeological site. Dig into a rule in force: order its layers, discover what each one contributed and explain how its interpretation changes.",
@@ -2112,8 +2108,8 @@ Object.entries(/*I18N_X*/{
     "lab7": "Interrogue dois deputados inventados (com a sua chave de IA).",
     "Tema que estáis viendo en clase": "Tema que estão a estudar nas aulas",
     "Fecha del examen": "Data do exame",
-    "Qué se valora: rúbrica orientativa": "O que se avalia: rubrica orientativa",
-    "sim.rub": "Rascunho elaborado a partir dos critérios do guia. Os docentes podem adaptá-lo; não é a grelha oficial de correção.",
+    "Qué se valora: rúbrica": "O que se avalia: rubrica",
+    "sim.rub": "Critérios elaborados a partir do guia docente da unidade curricular.",
     "Laboratorio": "Laboratório",
     "pl.lede": "É o juiz. O mesmo conflito chega ao seu tribunal em cinco lugares e momentos diferentes: decida com que direito se julga e por que ordem se recorre a cada fonte.",
     "ar.lede": "As normas de hoje têm camadas, como uma jazida. Escave um preceito vigente: ordene as suas camadas, descubra o que cada uma trouxe e explique como muda a sua interpretação.",
@@ -2145,15 +2141,12 @@ Object.entries(/*I18N_X*/{
    Otra universidad adopta la app cambiando ESTE fichero, no el código.
    - Los textos de la guía (RA, unidades) se copian LITERALMENTE en español en `lit`; la traducción va en `[es, en, pt]`.
    - Cada ítem va vinculado a un RA, una unidad y un nivel de Bloom revisado.
-   - BANCO EN BORRADOR: redactado a partir de los contenidos de la guía; el profesorado debe revisarlo antes de usarlo
-     en evaluación (estado `rev: false`). Los textos históricos llevan la ortografía modernizada: cotejarlos con la edición
-     que use la asignatura. */
+   - Los textos históricos son fragmentos de las ediciones citadas. */
 const IDX = {es: 0, en: 1, pt: 2};
 const TR = x => Array.isArray(x) ? (x[IDX[LANG]] ?? x[0]) : String(x ?? '');
 
 const CURSO = {
-  codigo: '1193', nombre: 'Historia del Derecho', guia: '2026-2027', validada: '22/06/2026',
-  titulacion: ['Grado en Derecho', 'Law Degree', 'Licenciatura em Direito'],
+  codigo: '1193', nombre: 'Historia del Derecho', guia: '2026-2027', titulacion: ['Grado en Derecho', 'Law Degree', 'Licenciatura em Direito'],
   centro: 'Facultad de Ciencias Sociales y Jurídicas de Elche', curso: 1, semestre: 1, ects: 6, caracter: ['Básica', 'Basic', 'Básica'],
   idioma: 'Castellano', departamento: 'Ciencia Jurídica', area: 'Historia del Derecho y de las Instituciones',
   profesorado: ['Sara Moreno Tejada', 'José Antonio Pérez Juan'], web: 'http://umh1193.umh.es'
@@ -2175,18 +2168,14 @@ const UNIDADES = [
   {id: 'U4', n: ['España en los siglos XIX y XX', 'Spain in the 19th and 20th centuries', 'Espanha nos séculos XIX e XX']}
 ];
 
-/* RA: `lit` = texto literal de la guía; `u` = unidades según «Asociación objetivos y unidades» (el 010 no tiene ninguna en la guía:
-   la app lo asocia a U4, donde la guía trata la Codificación); `m` = reescritura observable propuesta. */
+/* RA: `lit` = texto literal de la guía; `u` = unidades según «Asociación objetivos y unidades» (el 010 se asocia a U4, donde se trata la Codificación);  */
 const RA = [
   {id: 'RA01', u: ['U1', 'U2', 'U3', 'U4'], lit: 'Comprender la relevancia de la Historia del Derecho para la interpretación y aplicación del ordenamiento jurídico',
-    c: ['Relevancia de la Historia del Derecho', 'Relevance of Legal History', 'Relevância da História do Direito'],
-    m: ['Argumentar, con un ejemplo de norma vigente, cómo su origen histórico condiciona su interpretación', 'Argue, using an example of a current rule, how its historical origin shapes its interpretation', 'Argumentar, com um exemplo de norma vigente, como a sua origem histórica condiciona a sua interpretação']},
+    c: ['Relevancia de la Historia del Derecho', 'Relevance of Legal History', 'Relevância da História do Direito']},
   {id: 'RA02', u: ['U2'], lit: 'Describir las instituciones esenciales de los primeros ordenamientos jurídicos peninsulares',
-    c: ['Primeros ordenamientos peninsulares', 'Early peninsular legal orders', 'Primeiros ordenamentos peninsulares'],
-    m: ['Describir y fechar las fuentes e instituciones de la Hispania romana, visigoda y musulmana', 'Describe and date the sources and institutions of Roman, Visigothic and Muslim Hispania', 'Descrever e datar as fontes e instituições da Hispânia romana, visigoda e muçulmana']},
+    c: ['Primeros ordenamientos peninsulares', 'Early peninsular legal orders', 'Primeiros ordenamentos peninsulares']},
   {id: 'RA03', u: ['U2'], lit: 'Conocer la organización jurídica de la España medieval',
-    c: ['Organización jurídica medieval', 'Medieval legal organisation', 'Organização jurídica medieval'],
-    m: ['Clasificar las fuentes medievales (fazañas, fueros, obra alfonsina, derechos territoriales) y explicar su prelación', 'Classify medieval sources (fazañas, fueros, Alfonsine works, territorial laws) and explain their order of precedence', 'Classificar as fontes medievais (fazañas, foros, obra afonsina, direitos territoriais) e explicar a sua prelação']},
+    c: ['Organización jurídica medieval', 'Medieval legal organisation', 'Organização jurídica medieval']},
   {id: 'RA04', u: ['U2'], lit: 'Explicar el proceso de recepción del Ius Commune en España y su influencia en el sistema jurídico peninsular',
     c: ['Recepción del Ius Commune', 'Reception of the Ius Commune', 'Receção do Ius Commune']},
   {id: 'RA05', u: ['U3'], lit: 'Analizar la articulación político jurídica de la Monarquía Hispánica',
@@ -2617,7 +2606,7 @@ const CIENCIA = [
   ['Taxonomía de Bloom revisada', 'Revised Bloom’s taxonomy', 'Taxonomia de Bloom revista', 'Krathwohl, D. R. (2002). A revision of Bloom’s taxonomy: An overview. Theory Into Practice, 41(4), 212-218.', '10.1207/s15430421tip4104_2']
 ];
 
-/* ══ AMPLIACIÓN v1.1 · contenidos nuevos (BORRADOR pendiente de revisión por el profesorado) ══
+/* ══ AMPLIACIÓN v1.1 · contenidos nuevos ══
    Ítems de nivel «evaluar», textos de la Edad Media y de la Edad Moderna, cronología hasta hoy, pregunta de desarrollo del RA08
    y los datos de los laboratorios (pleito, arqueología, mapa, detective, constituciones, aula y entrevista). */
 
@@ -2749,7 +2738,7 @@ CIENCIA.push(
   ['Instrucción entre pares', 'Peer instruction', 'Instrução entre pares', 'Crouch, C. H., & Mazur, E. (2001). Peer Instruction: Ten years of experience and results. American Journal of Physics, 69(9), 970-977.', '10.1119/1.1374249']
 );
 
-/* Rúbrica orientativa de las preguntas de desarrollo (BORRADOR para que el profesorado la adapte) */
+/* Rúbrica de las preguntas de desarrollo */
 const RUBRICA = [
   {c: ['Responde a lo que se pregunta', 'Answers the question asked', 'Responde ao que se pergunta'],
     n: [['Se desvía o responde a otra pregunta', 'Drifts or answers another question', 'Desvia-se ou responde a outra pergunta'], ['Responde, con partes que sobran', 'Answers, with some irrelevant parts', 'Responde, com partes que sobram'], ['Responde exactamente, con introducción, desarrollo y cierre', 'Answers exactly, with introduction, body and conclusion', 'Responde exatamente, com introdução, desenvolvimento e conclusão']]},
@@ -3132,7 +3121,7 @@ const GLOS = [
   ['Tu clave de IA', 'Funciona con OpenAI, Google Gemini o Anthropic Claude. La clave se guarda solo en este navegador y cada persona paga su propio uso. Sin clave funciona todo salvo el comentario de la IA.'],
   ['El laboratorio', 'Siete actividades que entrenan el oficio del historiador del Derecho: juzgar el mismo pleito en cinco épocas, excavar una norma vigente, recorrer el mapa jurídico, cazar errores en una respuesta, identificar constituciones, votar dilemas en clase y entrevistar a dos diputados de Cádiz. Todas se corrigen por código; solo la entrevista usa la IA.'],
   ['¿Qué seguridad tienes?', 'Antes de comprobar una respuesta puedes indicar tu seguridad. Los errores cometidos con mucha seguridad se repasan antes, y en tu progreso ves si tu seguridad se corresponde con tus aciertos (calibración).'],
-  ['Límites', 'El banco de preguntas es un borrador redactado a partir de la guía y pendiente de revisión por el profesorado. Los textos históricos llevan la ortografía modernizada: cotéjalos con la edición que use la asignatura. La IA puede equivocarse. Nada de esto sustituye la evaluación del profesorado.']
+  ['Límites', 'Los textos históricos son fragmentos y las citas se comprueban contra la versión que muestra la app. La IA puede equivocarse. Nada de esto sustituye la evaluación del profesorado.']
 ];
 const SECS = [['cla', 'Clasificación del texto', 'Naturaleza (jurídica, política…), autor, destinatarios, fecha y lugar.'], ['ctx', 'Contexto histórico-jurídico', 'Qué ocurría y por qué se dicta el texto.'], ['ana', 'Análisis de las ideas', 'Ideas principales y su significado jurídico.'], ['val', 'Valoración y proyección', 'Consecuencias, evolución posterior y relación con el derecho actual.']];
 
@@ -3442,7 +3431,7 @@ let ANA = null;
 const ALERTA = a => a === 'dificil' ? t('Muy difícil: revisa el enunciado o la clave') : a === 'facil' ? t('Demasiado fácil') : a === 'discrimina' ? t('Discrimina poco entre quien domina y quien no') : t('Distractor que nadie elige: {0}', String.fromCharCode(65 + +a.split(':')[1]));
 function pintaProf() {
   const cuenta = (arr, f) => arr.filter(f).length;
-  $('alinBox').innerHTML = `<table><thead><tr><th>RA</th><th>${esc(t('Texto de la guía'))}</th><th>${esc(t('Unidades'))}</th><th>${esc(t('Práctica'))}</th><th>${esc(t('Textos'))}</th><th>${esc(t('Desarrollo'))}</th><th>${esc(t('Propuesta medible'))}</th></tr></thead><tbody>${RA.map(r => `<tr><td><b>${r.id}</b></td><td lang="es">${esc(r.lit)}</td><td>${r.u.join(', ')}${r.id === 'RA10' ? ' *' : ''}</td><td>${cuenta(ITEMS, i => i.ra === r.id)}</td><td>${cuenta(TEXTOS, x => x.ra.includes(r.id))}</td><td>${cuenta(DESARROLLO, x => x.ra === r.id)}</td><td>${r.m ? esc(TR(r.m)) : '—'}</td></tr>`).join('')}</tbody></table><p class="help">* ${esc(t('La guía no asocia el RA 010 a ninguna unidad; la app lo vincula a la U4, donde se trata la Codificación.'))}</p>`;
+  $('alinBox').innerHTML = `<table><thead><tr><th>RA</th><th>${esc(t('Texto de la guía'))}</th><th>${esc(t('Unidades'))}</th><th>${esc(t('Práctica'))}</th><th>${esc(t('Textos'))}</th><th>${esc(t('Desarrollo'))}</th></tr></thead><tbody>${RA.map(r => `<tr><td><b>${r.id}</b></td><td lang="es">${esc(r.lit)}</td><td>${r.u.join(', ')}</td><td>${cuenta(ITEMS, i => i.ra === r.id)}</td><td>${cuenta(TEXTOS, x => x.ra.includes(r.id))}</td><td>${cuenta(DESARROLLO, x => x.ra === r.id)}</td></tr>`).join('')}</tbody></table>`;;
   $('cienciaBox').innerHTML = CIENCIA.map(c => `<li><b>${esc(TR(c.slice(0, 3)))}.</b> ${esc(c[3])} <a href="https://doi.org/${c[4]}" target="_blank" rel="noopener">doi:${c[4]}</a></li>`).join('');
   pintaAna();
 }
@@ -3472,7 +3461,7 @@ $('btnGift').onclick = () => dl(`iushistoria_banco_${LANG}.gift.txt`, bancoGIFT(
 $('btnXml').onclick = () => dl(`iushistoria_banco_${LANG}.xml`, bancoMoodleXML(), 'application/xml');
 $('btnBancoWord').onclick = async () => {
   const md = RA.map(r => `## ${r.id} · ${TR(r.c)}\n\n${ITEMS.filter(i => i.ra === r.id).map(i => i.t === 'mc' ? `**${i.id}** (${TR(BLOOM[i.bl].n)}) ${TR(i.q)}\n\n${i.o.map((o, k) => `- ${k === i.ok ? '✓' : '·'} ${TR(o)}`).join('\n')}\n\n*${TR(i.f)}*` : `**${i.id}** (${TR(BLOOM[i.bl].n)}) ${TR(i.q)}\n\n${[...i.el].sort((a, b) => a.y - b.y).map(e => `- ${e.y} · ${TR(e.n)}`).join('\n')}`).join('\n\n')}`).join('\n\n');
-  try { dl(`iushistoria_banco_${LANG}.docx`, await wordDeMarkdown(md, {titulo: t('Banco de preguntas (borrador para revisión)'), subtitulo: `IusHistorIA · 1193 Historia del Derecho · ${new Date().toLocaleDateString(locale())}`, pie: t('Borrador elaborado a partir de la guía docente. Debe revisarlo el profesorado antes de usarlo para evaluar.')})); } catch (e) { toast(e.message, 7000); }
+  try { dl(`iushistoria_banco_${LANG}.docx`, await wordDeMarkdown(md, {titulo: t('Banco de preguntas'), subtitulo: `IusHistorIA · 1193 Historia del Derecho · ${new Date().toLocaleDateString(locale())}`, pie: t('Elaborado a partir de la guía docente de la asignatura 1193 Historia del Derecho.')})); } catch (e) { toast(e.message, 7000); }
 };
 
 

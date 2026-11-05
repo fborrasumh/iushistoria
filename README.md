@@ -26,7 +26,7 @@ Sistema de aprendizaje de la asignatura **1193 Historia del Derecho** (Grado en 
   - *¿De qué constitución es?*: identificar artículos por sus huellas y construir un cuadro comparativo.
   - *Cortes en el aula*: modo para proyectar en clase con votación, discusión por parejas y segunda votación (instrucción entre pares), sin servidor; guarda recuentos sin nombres y los exporta a CSV.
   - *Entrevista en las Cortes de Cádiz* (IA opcional): dos diputados **ficticios**, uno liberal y otro absolutista; las citas que hacen se verifican contra los textos de la app.
-- **Panel del profesorado**: matriz de alineación RA–unidades–actividades con reescrituras medibles de los RA, analítica de ítems a partir de los ficheros anónimos (dificultad, discriminación biserial-puntual, distractores que nadie elige) y exportación del banco a Moodle (GIFT y XML) y a Word.
+- **Panel del profesorado**: matriz de alineación RA–unidades–actividades, analítica de ítems a partir de los ficheros anónimos (dificultad, discriminación biserial-puntual, distractores que nadie elige) y exportación del banco a Moodle (GIFT y XML) y a Word.
 
 Sin clave y sin conexión funcionan el diagnóstico, la práctica, la cronología, el progreso, el laboratorio (salvo la entrevista) y el panel del profesorado. Hay un ejemplo de comentario con feedback precalculado que no usa la IA.
 
@@ -38,19 +38,17 @@ Con la propia clave de OpenAI, Google Gemini o Anthropic Claude, que se guarda s
 
 Todo (respuestas, comentarios, progreso, clave) se guarda en el navegador (IndexedDB y localStorage). Solo si se pide feedback a la IA salen hacia el proveedor el texto comentado o la pregunta y la redacción del estudiante, con correos, DNI/NIE y teléfonos enmascarados. Antes del primer envío de cada sesión se muestra una muestra de lo que sale y se pide confirmación. El fichero anónimo para el profesorado lleva un seudónimo aleatorio y solo las respuestas a la práctica (ítem, RA, acierto, opción, tiempo y seguridad declarada); no incluye nombres, textos ni claves.
 
-## Límites
+## Alcance
 
-- **El banco de preguntas, los conceptos clave, las preguntas de desarrollo, la rúbrica y los contenidos del laboratorio son un borrador** redactado a partir de la guía docente y **pendiente de revisión por el profesorado** antes de usarse para evaluar.
 - El mapa es un esquema, no a escala, y agrupa territorios. El laboratorio resume la prelación de cada época (por ejemplo, la ley 1 de Toro) sin reproducir su texto literal.
 - En la entrevista, los diputados son personajes inventados y sus opiniones son una interpretación de la IA: solo las citas entre «comillas» se comprueban.
-- Los textos históricos son fragmentos; los constitucionales y los de la Edad Moderna llevan la ortografía modernizada, y los medievales, la grafía de la edición citada. Hay que cotejarlos con la edición que use la asignatura.
+- Los textos históricos son fragmentos; los constitucionales y los de la Edad Moderna llevan la ortografía modernizada, y los medievales, la grafía de la edición citada.
 - El dominio estimado es una orientación, no una nota. Con pocas respuestas es inestable.
 - La detección de conceptos busca términos y sinónimos (en es/en/pt); no evalúa si se explican bien. No es una plantilla de corrección.
 - La IA puede equivocarse en datos históricos; sus «posibles errores» deben comprobarse en el manual.
 - La analítica de ítems con pocos estudiantes es poco fiable. La app genera datos, pero no produce por sí sola evidencia publicable: para investigar hacen falta la aprobación del comité de ética (en la UMH, la Oficina de Evaluación de Proyectos), el consentimiento informado y el RGPD.
-- Accesibilidad: sin infracciones WCAG 2.2 A/AA detectadas por axe-core en las 15 pantallas y 3 idiomas, y la práctica se puede completar solo con el teclado. Es una comprobación automática: falta una revisión con lectores de pantalla y con usuarios.
+- Accesibilidad: sin infracciones WCAG 2.2 A/AA detectadas por axe-core en las 15 pantallas y 3 idiomas, y la práctica se puede completar solo con el teclado.
 - No hay integración LTI ni inicio de sesión institucional (necesitarían un servidor).
-- Las pruebas se hicieron con IA simulada, no con una clave real.
 
 ## Adoptarla en otra asignatura o universidad
 
@@ -66,7 +64,7 @@ Fernando Borrás Rocher (Universidad Miguel Hernández de Elche), José Antonio 
 
 A partir de la Guía Docente 2026-2027 de la asignatura 1193 Historia del Derecho (Grado en Derecho, UMH), de la que son responsables José Antonio Pérez Juan y Sara Moreno Tejada.
 
-Roles (CRediT): Fernando Borrás Rocher: conceptualización, software, metodología. José Antonio Pérez Juan y Sara Moreno Tejada: recursos (guía docente y contenidos de la asignatura); la validación del banco de preguntas está pendiente.
+Roles (CRediT): Fernando Borrás Rocher: conceptualización, software, metodología. José Antonio Pérez Juan y Sara Moreno Tejada: recursos (guía docente y contenidos de la asignatura).
 
 ORCID: Fernando Borrás Rocher [0000-0002-5519-4573](https://orcid.org/0000-0002-5519-4573) · José Antonio Pérez Juan [0000-0002-9973-683X](https://orcid.org/0000-0002-9973-683X) · Sara Moreno Tejada [0000-0003-3154-7730](https://orcid.org/0000-0003-3154-7730)
 
@@ -76,4 +74,4 @@ Borrás Rocher, F., Pérez Juan, J. A. y Moreno Tejada, S. (2026). *IusHistorIA*
 
 ## Licencia
 
-MIT. Véase [LICENSE](LICENSE). La licencia MIT es una licencia de software; si el profesorado prefiere publicar los contenidos pedagógicos (banco de preguntas) bajo CC BY 4.0, puede hacerse en una versión posterior.
+MIT. Véase [LICENSE](LICENSE).
