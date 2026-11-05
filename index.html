@@ -537,13 +537,61 @@ table{border-collapse:collapse;width:100%;font-size:13.8px}th{background:var(--p
     <div class="jstop" style="--c:#C98200"><span class="jn">3</span><div class="ji"><svg class="i"><use href="#i-book"/></svg></div><b data-i18n="j3b">Comentario de texto</b><span data-i18n="j3s">Textos histórico-jurídicos originales, como en la parte práctica del examen.</span></div>
     <div class="jstop" style="--c:#E4572E"><span class="jn">4</span><div class="ji"><svg class="i"><use href="#i-pencil"/></svg></div><b data-i18n="j4b">Simulacro de desarrollo</b><span data-i18n="j4s">Seis preguntas, eliges cuatro: el formato del 70 % de la nota.</span></div>
     <div class="jstop" style="--c:#0E8C7A"><span class="jn">5</span><div class="ji"><svg class="i"><use href="#i-target"/></svg></div><b data-i18n="j5b">Progreso</b><span data-i18n="j5s">Tu dominio estimado de cada resultado de aprendizaje y qué repasar.</span></div>
+    <div class="jstop" style="--c:#8A3617"><span class="jn">6</span><div class="ji"><svg class="i"><use href="#i-grid"/></svg></div><b data-i18n="Laboratorio de la asignatura">Laboratorio de la asignatura</b><span data-i18n="j6s">Siete actividades: juzga, excava normas, recorre el mapa jurídico y caza errores.</span></div>
   </div>
   <div class="grid2" style="margin-top:16px">
     <div class="card"><h3 data-i18n="Lo que hace el código y lo que hace la IA">Lo que hace el código y lo que hace la IA</h3><ul class="ih-ul" data-i18n="ini.codigo"><li>El <b>código</b> corrige la práctica, elige la siguiente actividad, detecta los conceptos clave de tu redacción y comprueba que cada cita existe.</li><li>La <b>IA</b> (opcional, con tu clave) comenta tus comentarios y respuestas. Nunca pone nota: si lo intenta, el código lo elimina.</li><li>Sin clave y sin conexión funcionan el diagnóstico, la práctica, la cronología, el progreso y el laboratorio (salvo la entrevista).</li></ul></div>
     <div class="card"><h3 data-i18n="Más">Más</h3><div class="actions" style="margin-top:0"><button class="btn btn-ghost" type="button" data-hub="0"><svg class="i"><use href="#i-calendar"/></svg><span data-i18n="Cronología">Cronología</span></button><button class="btn btn-ghost" type="button" data-hub="1"><svg class="i"><use href="#i-users"/></svg><span data-i18n="Profesorado">Profesorado</span></button></div><p class="help" data-i18n="ini.borrador">Banco de preguntas elaborado a partir de la guía docente de la asignatura. Si tienes dudas sobre una pregunta, consulta a tu profesor o profesora.</p></div>
   </div>
-  <h2 class="sec-title" data-i18n="Laboratorio de Historia del Derecho">Laboratorio de Historia del Derecho</h2>
-  <p class="help" data-i18n="lab.lede">Siete actividades para entrenar el oficio del historiador del Derecho: datar, clasificar, aplicar el orden de fuentes de cada época y conectar el pasado con el derecho de hoy.</p>
+  <h2 class="sec-title" data-i18n="Dónde va cada cosa">Dónde va cada cosa</h2>
+  <div class="zonas"><div class="zona l"><h4 data-i18n="Siempre en tu ordenador">Siempre en tu ordenador</h4><ul data-i18n="zl"><li>Tus respuestas, tus comentarios y tu progreso, guardados en este navegador</li><li>Tu clave de IA</li><li>La corrección, la ruta adaptativa y las descargas</li></ul></div>
+    <div class="zona n"><h4 data-i18n="Sale hacia tu proveedor de IA">Sale hacia tu proveedor de IA</h4><ul data-i18n="zn"><li>Solo si pides feedback: el texto comentado o la pregunta, y tu redacción, con los datos personales enmascarados</li><li>Antes del primer envío ves lo que sale</li></ul></div></div>
+</section>
+
+<!-- 1 · DIAGNÓSTICO -->
+<section class="screen" data-step="1">
+  <header class="sh" style="--c:#6B4FD8"><div class="sh-ico"><svg class="i"><use href="#i-target"/></svg></div><div><p class="sh-step" data-i18n="paso1">Paso 1 de 6</p><h2 data-i18n="Diagnóstico inicial">Diagnóstico inicial</h2><p class="sh-lede" data-i18n="diag.lede">Una pregunta por cada resultado de aprendizaje (RA) de la guía. No cuenta para nada: sirve para que la práctica empiece por lo que más necesitas.</p></div></header>
+  <div id="diagBox"></div>
+</section>
+
+<!-- 2 · PRÁCTICA -->
+<section class="screen" data-step="2">
+  <header class="sh" style="--c:#1F6FB2"><div class="sh-ico"><svg class="i"><use href="#i-refresh"/></svg></div><div><p class="sh-step" data-i18n="paso2">Paso 2 de 6</p><h2 data-i18n="Práctica adaptativa">Práctica adaptativa</h2><p class="sh-lede" data-i18n="prac.lede">Cada respuesta actualiza tu dominio estimado de ese RA. La siguiente pregunta se elige por código: primero los repasos que tocan, después el RA más flojo, alternando temas.</p></div></header>
+  <div class="card"><div class="ih-row"><div class="field" style="flex:1;min-width:220px;margin:0"><label for="selRA" data-i18n="Practicar">Practicar</label><select id="selRA"></select></div><div class="field" style="flex:1;min-width:200px;margin:0"><label for="selFoco" data-i18n="Tema que estáis viendo en clase">Tema que estáis viendo en clase</label><select id="selFoco"></select></div><div class="field" style="min-width:170px;margin:0"><label for="fechaEx" data-i18n="Fecha del examen">Fecha del examen</label><input type="date" id="fechaEx"></div></div><p class="help" id="pracCont" style="margin:8px 0 0" aria-live="polite"></p><p class="help" id="pracPlan" style="margin:4px 0 0"></p></div>
+  <div class="card" id="pracBox"></div>
+</section>
+
+<!-- 3 · COMENTARIO DE TEXTO -->
+<section class="screen" data-step="3">
+  <header class="sh" style="--c:#C98200"><div class="sh-ico"><svg class="i"><use href="#i-book"/></svg></div><div><p class="sh-step" data-i18n="paso3">Paso 3 de 6</p><h2 data-i18n="Comentario de texto">Comentario de texto</h2><p class="sh-lede" data-i18n="com.lede">Como en la parte práctica del examen: contextualiza el texto y responde a lo que plantea. El código cuenta los conceptos clave que tratas y comprueba tus citas del texto; la IA, si quieres, comenta tu redacción.</p></div></header>
+  <div class="card"><div class="field" style="margin:0"><label for="selTexto" data-i18n="Texto que vas a comentar">Texto que vas a comentar</label><select id="selTexto"></select></div><div id="comFuente"></div></div>
+  <div class="card"><h3 data-i18n="Tu comentario">Tu comentario</h3><p class="help" data-i18n="com.ayuda">Escribe en el idioma que prefieras. Si citas el texto, ponlo entre comillas «…»: el código comprobará que la cita es literal.</p><div id="comSecs"></div><div id="comChecks" aria-live="polite"></div>
+    <div class="actions"><button class="btn btn-primary" id="btnComFb" type="button"><svg class="i"><use href="#i-sparkles"/></svg><span data-i18n="Pedir comentario a la IA">Pedir comentario a la IA</span></button><button class="btn btn-word" id="btnComWord" type="button"><svg class="i"><use href="#i-doc"/></svg>Word</button></div><p class="help" id="comEstado" role="status"></p></div>
+  <div class="card" id="comFb" aria-live="polite"></div>
+</section>
+
+<!-- 4 · SIMULACRO DE DESARROLLO -->
+<section class="screen" data-step="4">
+  <header class="sh" style="--c:#E4572E"><div class="sh-ico"><svg class="i"><use href="#i-pencil"/></svg></div><div><p class="sh-step" data-i18n="paso4">Paso 4 de 6</p><h2 data-i18n="Simulacro de preguntas de desarrollo">Simulacro de preguntas de desarrollo</h2><p class="sh-lede" data-i18n="sim.lede">Como en el examen: seis preguntas, eliges cuatro (2,5 puntos cada una en el examen real). Según la guía, una respuesta en blanco o que no corresponde a la pregunta impide aprobar. Sin límite de tiempo: el cronómetro es solo orientativo.</p></div></header>
+  <details class="card ih-rub"><summary data-i18n="Qué se valora: rúbrica">Qué se valora: rúbrica</summary><div class="table-wrap" id="simRub"></div><p class="help" data-i18n="sim.rub">Criterios elaborados a partir de la guía docente de la asignatura.</p></details>
+  <div class="card"><div class="actions" style="margin-top:0"><button class="btn btn-ghost" id="btnSimNuevo" type="button"><svg class="i"><use href="#i-refresh"/></svg><span data-i18n="Nuevo simulacro">Nuevo simulacro</span></button><label class="fa-chk"><input type="checkbox" id="chkCrono"> <span data-i18n="Mostrar cronómetro">Mostrar cronómetro</span></label><span class="fa-chip" id="crono" hidden aria-live="off"></span></div><div id="simBox"></div>
+    <div class="actions"><button class="btn btn-primary" id="btnSimRev" type="button"><svg class="i"><use href="#i-check"/></svg><span data-i18n="Revisar mi entrega">Revisar mi entrega</span></button><button class="btn btn-ghost" id="btnSimFb" type="button"><svg class="i"><use href="#i-sparkles"/></svg><span data-i18n="Pedir comentario a la IA">Pedir comentario a la IA</span></button><button class="btn btn-word" id="btnSimWord" type="button"><svg class="i"><use href="#i-doc"/></svg>Word</button></div><p class="help" id="simEstado" role="status"></p></div>
+  <div class="card" id="simRes" aria-live="polite"></div>
+</section>
+
+<!-- 5 · PROGRESO -->
+<section class="screen" data-step="5">
+  <header class="sh" style="--c:#0E8C7A"><div class="sh-ico"><svg class="i"><use href="#i-target"/></svg></div><div><p class="sh-step" data-i18n="paso5">Paso 5 de 6</p><h2 data-i18n="Tu progreso">Tu progreso</h2><p class="sh-lede" data-i18n="prog.lede">Dominio estimado por resultado de aprendizaje: probabilidad de acertar una pregunta de nivel «aplicar», descontando el olvido. Es una estimación para orientarte, no una nota.</p></div></header>
+  <div class="card" id="progBox"></div>
+  <div class="grid2">
+    <div class="card"><h3 data-i18n="Copia de seguridad">Copia de seguridad</h3><p class="help" data-i18n="prog.copia">Tu trabajo vive en este navegador. Guarda una copia para pasarlo a otro dispositivo.</p><div class="actions"><button class="btn btn-ghost" id="btnBackup" type="button"><svg class="i"><use href="#i-download"/></svg><span data-i18n="Descargar copia">Descargar copia</span></button><label class="btn btn-ghost" for="fileBackup"><svg class="i"><use href="#i-upload"/></svg><span data-i18n="Restaurar copia">Restaurar copia</span></label><input type="file" id="fileBackup" accept=".json,application/json" hidden><button class="btn btn-ghost" id="btnCsvProg" type="button">CSV</button></div><div class="actions"><button class="btn btn-ghost btn-sm" id="btnReset" type="button"><svg class="i"><use href="#i-trash"/></svg><span data-i18n="Borrar todo mi progreso">Borrar todo mi progreso</span></button></div></div>
+    <div class="card"><h3 data-i18n="Compartir con el profesorado (anónimo y voluntario)">Compartir con el profesorado (anónimo y voluntario)</h3><p class="help" data-i18n="prog.anon">Genera un fichero con tus respuestas a la práctica bajo un seudónimo, sin tu nombre y sin tus textos. Sirve para que el profesorado mejore las preguntas. Tú decides si lo entregas.</p><label class="fa-chk" style="margin:8px 0"><input type="checkbox" id="chkAnon"> <span data-i18n="He leído qué contiene y quiero generarlo">He leído qué contiene y quiero generarlo</span></label><div class="actions"><button class="btn btn-ghost" id="btnAnon" type="button" disabled><svg class="i"><use href="#i-shield"/></svg><span data-i18n="Generar fichero anónimo">Generar fichero anónimo</span></button></div><p class="help" id="anonInfo"></p></div>
+  </div>
+</section>
+
+<!-- 6 · LABORATORIO DE LA ASIGNATURA -->
+<section class="screen" data-step="6">
+  <header class="sh" style="--c:#8A3617"><div class="sh-ico"><svg class="i"><use href="#i-grid"/></svg></div><div><p class="sh-step" data-i18n="paso6">Paso 6 de 6</p><h2 data-i18n="Laboratorio de la asignatura">Laboratorio de la asignatura</h2><p class="sh-lede" data-i18n="lab.lede">Siete actividades para entrenar el oficio del historiador del Derecho: datar, clasificar, aplicar el orden de fuentes de cada época y conectar el pasado con el derecho de hoy.</p></div></header>
   <div class="ih-labs">
     <button class="ih-lab" type="button" data-hub="2" style="--c:#C98200"><svg class="i"><use href="#i-scale"/></svg><b data-i18n="El mismo pleito en cinco épocas">El mismo pleito en cinco épocas</b><span data-i18n="lab1">Haz de juez en 1350, 1510, 1690, 1720 y 1890.</span></button>
     <button class="ih-lab" type="button" data-hub="3" style="--c:#6B4FD8"><svg class="i"><use href="#i-archive"/></svg><b data-i18n="Arqueología de una norma vigente">Arqueología de una norma vigente</b><span data-i18n="lab2">Excava el art. 149.1.8.ª de la Constitución o el art. 1 del Código Civil.</span></button>
@@ -553,60 +601,16 @@ table{border-collapse:collapse;width:100%;font-size:13.8px}th{background:var(--p
     <button class="ih-lab" type="button" data-hub="7" style="--c:#2E4B6B"><svg class="i"><use href="#i-users"/></svg><b data-i18n="Cortes en el aula">Cortes en el aula</b><span data-i18n="lab6">Para clase: votad dilemas históricos, discutid y volved a votar.</span></button>
     <button class="ih-lab" type="button" data-hub="8" style="--c:#8A3617"><svg class="i"><use href="#i-chat"/></svg><b data-i18n="Entrevista en las Cortes de Cádiz">Entrevista en las Cortes de Cádiz</b><span data-i18n="lab7">Pregunta a dos diputados inventados (con tu clave de IA).</span></button>
   </div>
-  <h2 class="sec-title" data-i18n="Dónde va cada cosa">Dónde va cada cosa</h2>
-  <div class="zonas"><div class="zona l"><h4 data-i18n="Siempre en tu ordenador">Siempre en tu ordenador</h4><ul data-i18n="zl"><li>Tus respuestas, tus comentarios y tu progreso, guardados en este navegador</li><li>Tu clave de IA</li><li>La corrección, la ruta adaptativa y las descargas</li></ul></div>
-    <div class="zona n"><h4 data-i18n="Sale hacia tu proveedor de IA">Sale hacia tu proveedor de IA</h4><ul data-i18n="zn"><li>Solo si pides feedback: el texto comentado o la pregunta, y tu redacción, con los datos personales enmascarados</li><li>Antes del primer envío ves lo que sale</li></ul></div></div>
-</section>
-
-<!-- 1 · DIAGNÓSTICO -->
-<section class="screen" data-step="1">
-  <header class="sh" style="--c:#6B4FD8"><div class="sh-ico"><svg class="i"><use href="#i-target"/></svg></div><div><p class="sh-step" data-i18n="paso1">Paso 1 de 5</p><h2 data-i18n="Diagnóstico inicial">Diagnóstico inicial</h2><p class="sh-lede" data-i18n="diag.lede">Una pregunta por cada resultado de aprendizaje (RA) de la guía. No cuenta para nada: sirve para que la práctica empiece por lo que más necesitas.</p></div></header>
-  <div id="diagBox"></div>
-</section>
-
-<!-- 2 · PRÁCTICA -->
-<section class="screen" data-step="2">
-  <header class="sh" style="--c:#1F6FB2"><div class="sh-ico"><svg class="i"><use href="#i-refresh"/></svg></div><div><p class="sh-step" data-i18n="paso2">Paso 2 de 5</p><h2 data-i18n="Práctica adaptativa">Práctica adaptativa</h2><p class="sh-lede" data-i18n="prac.lede">Cada respuesta actualiza tu dominio estimado de ese RA. La siguiente pregunta se elige por código: primero los repasos que tocan, después el RA más flojo, alternando temas.</p></div></header>
-  <div class="card"><div class="ih-row"><div class="field" style="flex:1;min-width:220px;margin:0"><label for="selRA" data-i18n="Practicar">Practicar</label><select id="selRA"></select></div><div class="field" style="flex:1;min-width:200px;margin:0"><label for="selFoco" data-i18n="Tema que estáis viendo en clase">Tema que estáis viendo en clase</label><select id="selFoco"></select></div><div class="field" style="min-width:170px;margin:0"><label for="fechaEx" data-i18n="Fecha del examen">Fecha del examen</label><input type="date" id="fechaEx"></div></div><p class="help" id="pracCont" style="margin:8px 0 0" aria-live="polite"></p><p class="help" id="pracPlan" style="margin:4px 0 0"></p></div>
-  <div class="card" id="pracBox"></div>
-</section>
-
-<!-- 3 · COMENTARIO DE TEXTO -->
-<section class="screen" data-step="3">
-  <header class="sh" style="--c:#C98200"><div class="sh-ico"><svg class="i"><use href="#i-book"/></svg></div><div><p class="sh-step" data-i18n="paso3">Paso 3 de 5</p><h2 data-i18n="Comentario de texto">Comentario de texto</h2><p class="sh-lede" data-i18n="com.lede">Como en la parte práctica del examen: contextualiza el texto y responde a lo que plantea. El código cuenta los conceptos clave que tratas y comprueba tus citas del texto; la IA, si quieres, comenta tu redacción.</p></div></header>
-  <div class="card"><div class="field" style="margin:0"><label for="selTexto" data-i18n="Texto que vas a comentar">Texto que vas a comentar</label><select id="selTexto"></select></div><div id="comFuente"></div></div>
-  <div class="card"><h3 data-i18n="Tu comentario">Tu comentario</h3><p class="help" data-i18n="com.ayuda">Escribe en el idioma que prefieras. Si citas el texto, ponlo entre comillas «…»: el código comprobará que la cita es literal.</p><div id="comSecs"></div><div id="comChecks" aria-live="polite"></div>
-    <div class="actions"><button class="btn btn-primary" id="btnComFb" type="button"><svg class="i"><use href="#i-sparkles"/></svg><span data-i18n="Pedir comentario a la IA">Pedir comentario a la IA</span></button><button class="btn btn-word" id="btnComWord" type="button"><svg class="i"><use href="#i-doc"/></svg>Word</button></div><p class="help" id="comEstado" role="status"></p></div>
-  <div class="card" id="comFb" aria-live="polite"></div>
-</section>
-
-<!-- 4 · SIMULACRO DE DESARROLLO -->
-<section class="screen" data-step="4">
-  <header class="sh" style="--c:#E4572E"><div class="sh-ico"><svg class="i"><use href="#i-pencil"/></svg></div><div><p class="sh-step" data-i18n="paso4">Paso 4 de 5</p><h2 data-i18n="Simulacro de preguntas de desarrollo">Simulacro de preguntas de desarrollo</h2><p class="sh-lede" data-i18n="sim.lede">Como en el examen: seis preguntas, eliges cuatro (2,5 puntos cada una en el examen real). Según la guía, una respuesta en blanco o que no corresponde a la pregunta impide aprobar. Sin límite de tiempo: el cronómetro es solo orientativo.</p></div></header>
-  <details class="card ih-rub"><summary data-i18n="Qué se valora: rúbrica">Qué se valora: rúbrica</summary><div class="table-wrap" id="simRub"></div><p class="help" data-i18n="sim.rub">Criterios elaborados a partir de la guía docente de la asignatura.</p></details>
-  <div class="card"><div class="actions" style="margin-top:0"><button class="btn btn-ghost" id="btnSimNuevo" type="button"><svg class="i"><use href="#i-refresh"/></svg><span data-i18n="Nuevo simulacro">Nuevo simulacro</span></button><label class="fa-chk"><input type="checkbox" id="chkCrono"> <span data-i18n="Mostrar cronómetro">Mostrar cronómetro</span></label><span class="fa-chip" id="crono" hidden aria-live="off"></span></div><div id="simBox"></div>
-    <div class="actions"><button class="btn btn-primary" id="btnSimRev" type="button"><svg class="i"><use href="#i-check"/></svg><span data-i18n="Revisar mi entrega">Revisar mi entrega</span></button><button class="btn btn-ghost" id="btnSimFb" type="button"><svg class="i"><use href="#i-sparkles"/></svg><span data-i18n="Pedir comentario a la IA">Pedir comentario a la IA</span></button><button class="btn btn-word" id="btnSimWord" type="button"><svg class="i"><use href="#i-doc"/></svg>Word</button></div><p class="help" id="simEstado" role="status"></p></div>
-  <div class="card" id="simRes" aria-live="polite"></div>
-</section>
-
-<!-- 5 · PROGRESO -->
-<section class="screen" data-step="5">
-  <header class="sh" style="--c:#0E8C7A"><div class="sh-ico"><svg class="i"><use href="#i-target"/></svg></div><div><p class="sh-step" data-i18n="paso5">Paso 5 de 5</p><h2 data-i18n="Tu progreso">Tu progreso</h2><p class="sh-lede" data-i18n="prog.lede">Dominio estimado por resultado de aprendizaje: probabilidad de acertar una pregunta de nivel «aplicar», descontando el olvido. Es una estimación para orientarte, no una nota.</p></div></header>
-  <div class="card" id="progBox"></div>
-  <div class="grid2">
-    <div class="card"><h3 data-i18n="Copia de seguridad">Copia de seguridad</h3><p class="help" data-i18n="prog.copia">Tu trabajo vive en este navegador. Guarda una copia para pasarlo a otro dispositivo.</p><div class="actions"><button class="btn btn-ghost" id="btnBackup" type="button"><svg class="i"><use href="#i-download"/></svg><span data-i18n="Descargar copia">Descargar copia</span></button><label class="btn btn-ghost" for="fileBackup"><svg class="i"><use href="#i-upload"/></svg><span data-i18n="Restaurar copia">Restaurar copia</span></label><input type="file" id="fileBackup" accept=".json,application/json" hidden><button class="btn btn-ghost" id="btnCsvProg" type="button">CSV</button></div><div class="actions"><button class="btn btn-ghost btn-sm" id="btnReset" type="button"><svg class="i"><use href="#i-trash"/></svg><span data-i18n="Borrar todo mi progreso">Borrar todo mi progreso</span></button></div></div>
-    <div class="card"><h3 data-i18n="Compartir con el profesorado (anónimo y voluntario)">Compartir con el profesorado (anónimo y voluntario)</h3><p class="help" data-i18n="prog.anon">Genera un fichero con tus respuestas a la práctica bajo un seudónimo, sin tu nombre y sin tus textos. Sirve para que el profesorado mejore las preguntas. Tú decides si lo entregas.</p><label class="fa-chk" style="margin:8px 0"><input type="checkbox" id="chkAnon"> <span data-i18n="He leído qué contiene y quiero generarlo">He leído qué contiene y quiero generarlo</span></label><div class="actions"><button class="btn btn-ghost" id="btnAnon" type="button" disabled><svg class="i"><use href="#i-shield"/></svg><span data-i18n="Generar fichero anónimo">Generar fichero anónimo</span></button></div><p class="help" id="anonInfo"></p></div>
-  </div>
 </section>
 
 <!-- 6 · CRONOLOGÍA (sección) -->
-<section class="screen" data-step="6">
+<section class="screen" data-step="7">
   <header class="sh" style="--c:#1F6FB2"><div class="sh-ico"><svg class="i"><use href="#i-calendar"/></svg></div><div><h2 data-i18n="Cronología">Cronología</h2><p class="sh-lede" data-i18n="cro.lede">Las fechas clave de la asignatura. Oculta los años para ponerte a prueba.</p></div></header>
   <div class="card"><div class="ih-row"><div class="field" style="flex:1;min-width:220px;margin:0"><label for="selCroRA" data-i18n="Resultado de aprendizaje">Resultado de aprendizaje</label><select id="selCroRA"></select></div><label class="fa-chk"><input type="checkbox" id="chkOculta"> <span data-i18n="Ocultar los años">Ocultar los años</span></label></div><ol class="ih-crono" id="croBox"></ol></div>
 </section>
 
 <!-- 7 · PROFESORADO (sección) -->
-<section class="screen" data-step="7">
+<section class="screen" data-step="8">
   <header class="sh" style="--c:#6B4FD8"><div class="sh-ico"><svg class="i"><use href="#i-users"/></svg></div><div><h2 data-i18n="Profesorado">Profesorado</h2><p class="sh-lede" data-i18n="prof.lede">Alineación de resultados de aprendizaje, analítica de las preguntas a partir de los ficheros anónimos del alumnado y exportación del banco a Moodle.</p></div></header>
   <div class="card"><h3 data-i18n="Alineación: resultados de aprendizaje, unidades y actividades">Alineación: resultados de aprendizaje, unidades y actividades</h3><div class="table-wrap" id="alinBox"></div></div>
   <div class="card"><h3 data-i18n="Analítica de las preguntas">Analítica de las preguntas</h3><p class="help" data-i18n="prof.analitica">Carga los ficheros anónimos que te entregue el alumnado (puedes seleccionar varios a la vez). Se procesan en este navegador: no sale nada. Las propuestas son orientativas: tú decides qué cambiar.</p><div class="actions"><label class="btn btn-ghost" for="fileAnon"><svg class="i"><use href="#i-upload"/></svg><span data-i18n="Cargar ficheros del alumnado">Cargar ficheros del alumnado</span></label><input type="file" id="fileAnon" accept=".json,application/json" multiple hidden><button class="btn btn-ghost btn-sm" id="btnAnaDemo" type="button" data-i18n="Probar con datos ficticios">Probar con datos ficticios</button></div><div id="anaBox" aria-live="polite"></div></div>
@@ -616,48 +620,48 @@ table{border-collapse:collapse;width:100%;font-size:13.8px}th{background:var(--p
 </section>
 
 <!-- 8 · LABORATORIO: EL MISMO PLEITO EN CINCO ÉPOCAS (sección) -->
-<section class="screen" data-step="8">
+<section class="screen" data-step="9">
   <header class="sh" style="--c:#C98200"><div class="sh-ico"><svg class="i"><use href="#i-scale"/></svg></div><div><p class="sh-step" data-i18n="Laboratorio">Laboratorio</p><h2 data-i18n="El mismo pleito en cinco épocas">El mismo pleito en cinco épocas</h2><p class="sh-lede" data-i18n="pl.lede">Eres el juez. El mismo conflicto llega a tu tribunal en cinco lugares y momentos distintos: decide con qué derecho se juzga y en qué orden se acude a cada fuente.</p></div></header>
   <div id="plBox"></div>
 </section>
 
 <!-- 9 · LABORATORIO: ARQUEOLOGÍA DE UNA NORMA VIGENTE (sección) -->
-<section class="screen" data-step="9">
+<section class="screen" data-step="10">
   <header class="sh" style="--c:#6B4FD8"><div class="sh-ico"><svg class="i"><use href="#i-archive"/></svg></div><div><p class="sh-step" data-i18n="Laboratorio">Laboratorio</p><h2 data-i18n="Arqueología de una norma vigente">Arqueología de una norma vigente</h2><p class="sh-lede" data-i18n="ar.lede">Las normas de hoy tienen capas, como un yacimiento. Excava un precepto vigente: ordena sus capas, descubre qué aportó cada una y explica cómo cambia su interpretación.</p></div></header>
   <div class="card"><div class="field" style="margin:0"><label for="selNorma" data-i18n="Norma que vas a excavar">Norma que vas a excavar</label><select id="selNorma"></select></div><div id="arNorma"></div></div>
   <div id="arBox"></div>
 </section>
 
 <!-- 10 · LABORATORIO: MAPA VIVO DE LA ESPAÑA JURÍDICA (sección) -->
-<section class="screen" data-step="10">
+<section class="screen" data-step="11">
   <header class="sh" style="--c:#0E8C7A"><div class="sh-ico"><svg class="i"><use href="#i-globe"/></svg></div><div><p class="sh-step" data-i18n="Laboratorio">Laboratorio</p><h2 data-i18n="Mapa vivo de la España jurídica">Mapa vivo de la España jurídica</h2><p class="sh-lede" data-i18n="mp.lede">Mueve el tiempo y mira qué derecho regía en cada territorio. Esquema, no a escala: los territorios se agrupan para que se vea el cambio.</p></div></header>
   <div class="card" id="mpBox"></div>
   <div class="card"><h3 data-i18n="Ponte a prueba">Ponte a prueba</h3><div id="mpQ"></div></div>
 </section>
 
 <!-- 11 · LABORATORIO: DETECTIVE DE ANACRONISMOS (sección) -->
-<section class="screen" data-step="11">
+<section class="screen" data-step="12">
   <header class="sh" style="--c:#E4572E"><div class="sh-ico"><svg class="i"><use href="#i-eye"/></svg></div><div><p class="sh-step" data-i18n="Laboratorio">Laboratorio</p><h2 data-i18n="Detective de anacronismos">Detective de anacronismos</h2><p class="sh-lede" data-i18n="dt.lede">Un compañero ha respondido a una pregunta de examen. Suena bien, pero tiene errores: fechas cambiadas, atribuciones falsas y anacronismos. Marca las frases que están mal y comprueba.</p></div></header>
   <div class="card"><div class="field" style="margin:0"><label for="selDet" data-i18n="Respuesta que vas a revisar">Respuesta que vas a revisar</label><select id="selDet"></select></div></div>
   <div class="card" id="dtBox"></div>
 </section>
 
 <!-- 12 · LABORATORIO: ¿DE QUÉ CONSTITUCIÓN ES? (sección) -->
-<section class="screen" data-step="12">
+<section class="screen" data-step="13">
   <header class="sh" style="--c:#1F6FB2"><div class="sh-ico"><svg class="i"><use href="#i-doc"/></svg></div><div><p class="sh-step" data-i18n="Laboratorio">Laboratorio</p><h2 data-i18n="¿De qué constitución es?">¿De qué constitución es?</h2><p class="sh-lede" data-i18n="ct.lede">Un artículo sin fecha. Busca las huellas (quién es soberano, la religión, la forma de gobierno, el sufragio) y decide de qué constitución es: es el primer paso de cualquier comentario.</p></div></header>
   <div class="card" id="ctBox"></div>
   <div class="card"><h3 data-i18n="Tu cuadro comparativo">Tu cuadro comparativo</h3><p class="help" data-i18n="ct.cuadro">Cada constitución que identificas bien rellena su columna. Al final tienes un esquema de estudio hecho por ti.</p><div class="table-wrap" id="ctCuadro"></div></div>
 </section>
 
 <!-- 13 · LABORATORIO: CORTES EN EL AULA (sección) -->
-<section class="screen" data-step="13">
+<section class="screen" data-step="14">
   <header class="sh" style="--c:#2E4B6B"><div class="sh-ico"><svg class="i"><use href="#i-users"/></svg></div><div><p class="sh-step" data-i18n="Para clase">Para clase</p><h2 data-i18n="Cortes en el aula">Cortes en el aula</h2><p class="sh-lede" data-i18n="au.lede">Para proyectar en clase, sin conexión ni cuentas. El grupo vota un dilema histórico a mano alzada, discute por parejas y vuelve a votar; después se ve qué se decidió de verdad.</p></div></header>
   <div class="card ih-aula" id="auBox"></div>
   <div class="card"><h3 data-i18n="Sesiones guardadas">Sesiones guardadas</h3><div id="auLog"></div></div>
 </section>
 
 <!-- 14 · LABORATORIO: ENTREVISTA EN LAS CORTES DE CÁDIZ (sección) -->
-<section class="screen" data-step="14">
+<section class="screen" data-step="15">
   <header class="sh" style="--c:#C98200"><div class="sh-ico"><svg class="i"><use href="#i-chat"/></svg></div><div><p class="sh-step" data-i18n="Laboratorio">Laboratorio</p><h2 data-i18n="Entrevista en las Cortes de Cádiz">Entrevista en las Cortes de Cádiz</h2><p class="sh-lede" data-i18n="en.lede">Cádiz, 1812. Entrevista a dos diputados inventados, uno liberal y otro absolutista, y escribe tu informe. Necesita tu clave de IA; sin ella puedes ver un ejemplo.</p></div></header>
   <div class="card"><div class="field" style="margin:0"><label for="selPers" data-i18n="Diputado al que entrevistas">Diputado al que entrevistas</label><select id="selPers"></select></div><p class="help" data-i18n="en.aviso">Los dos diputados son personajes inventados: no se ponen palabras en boca de personas reales. Lo que citen entre «comillas» se comprueba con los textos de la app; lo demás es interpretación de la IA y puede contener errores.</p></div>
   <div class="card" id="enBox"></div>
@@ -925,14 +929,15 @@ function buildStepper() {
   $('stepper').innerHTML = STEPS.map((s, i) => `${i ? `<span class="sline${i <= step ? ' on' : ''}"></span>` : ''}<button class="sdot" type="button" data-go="${i}" data-state="${i < step ? 'done' : i === step ? 'now' : ''}" ${i === step ? 'aria-current="step"' : ''}><span class="n">${i < step ? ico('check') : i === 0 ? ico(typeof LOGO_ICON === 'string' ? LOGO_ICON : 'bulb') : i}</span><span class="lbl">${esc(t(s))}</span></button>`).join('');
   $$('#stepper [data-go]').forEach(b => b.onclick = () => go(+b.dataset.go));
 }
-function updateNav() { const N = NAV[step] || ['Volver al inicio', '']; $('navBack').classList.toggle('hidden', step === 0 || esHub(step)); $('navNextTxt').textContent = t(N[0]); $('navHint').textContent = N[1] ? t(N[1]) : ''; }
+const enLab = i => esHub(i) && i >= STEPS.length + 2;   // actividades del laboratorio
+function updateNav() { const N = enLab(step) ? ['Volver al laboratorio', ''] : NAV[step] || ['Volver al inicio', '']; $('navBack').classList.toggle('hidden', step === 0 || esHub(step)); $('navNextTxt').textContent = t(N[0]); $('navHint').textContent = N[1] ? t(N[1]) : ''; }
 function go(i) {
   step = i; $$('.screen').forEach(s => s.classList.toggle('on', +s.dataset.step === i)); $('progBar').style.width = esHub(i) ? '0%' : (i / (STEPS.length - 1) * 100) + '%';
   (RENDER[i] || (() => {}))(); buildStepper(); updateNav(); window.scrollTo({top: 0, behavior: 'instant'});
 }
 $('goHome').onclick = () => go(0);
 $('navBack').onclick = () => { if (step > 0) go(step - 1); };
-$('navNext').onclick = () => { if (esHub(step)) return go(0); const ok = typeof CAN_NEXT === 'function' ? CAN_NEXT(step) : true; if (ok !== true && ok) return toast(ok); go(step === STEPS.length - 1 ? 0 : step + 1); };
+$('navNext').onclick = () => { if (esHub(step)) return go(enLab(step) ? 6 : 0); const ok = typeof CAN_NEXT === 'function' ? CAN_NEXT(step) : true; if (ok !== true && ok) return toast(ok); go(step === STEPS.length - 1 ? 0 : step + 1); };
 
 /* ventanas modales (Escape y clic fuera cierran; data-close en el botón) */
 const _cierres = {};   // id de modal → función a ejecutar al cerrar
@@ -1458,11 +1463,11 @@ const I18N = {
     "ini.borrador": "Question bank prepared from the course syllabus. If you have doubts about a question, ask your lecturer.",
     "zl": "<li>Your answers, commentaries and progress, stored in this browser</li><li>Your AI key</li><li>Marking, the adaptive route and downloads</li>",
     "zn": "<li>Only if you ask for feedback: the text or question being commented on, and your writing, with personal data masked</li><li>Before the first send you see what goes out</li>",
-    "paso1": "Step 1 of 5",
-    "paso2": "Step 2 of 5",
-    "paso3": "Step 3 of 5",
-    "paso4": "Step 4 of 5",
-    "paso5": "Step 5 of 5",
+    "paso1": "Step 1 of 6",
+    "paso2": "Step 2 of 6",
+    "paso3": "Step 3 of 6",
+    "paso4": "Step 4 of 6",
+    "paso5": "Step 5 of 6",
     "Diagnóstico inicial": "Initial diagnostic",
     "diag.lede": "One question for each learning outcome (LO) in the syllabus. It does not count towards anything: it makes the practice start with what you need most.",
     "Práctica adaptativa": "Adaptive practice",
@@ -1681,11 +1686,11 @@ const I18N = {
     "ini.borrador": "Banco de perguntas elaborado a partir do guia docente da unidade curricular. Se tiver dúvidas sobre uma pergunta, consulte o seu professor ou professora.",
     "zl": "<li>As suas respostas, comentários e progresso, guardados neste navegador</li><li>A sua chave de IA</li><li>A correção, a rota adaptativa e os descarregamentos</li>",
     "zn": "<li>Só se pedir feedback: o texto comentado ou a pergunta, e a sua redação, com os dados pessoais mascarados</li><li>Antes do primeiro envio vê o que sai</li>",
-    "paso1": "Passo 1 de 5",
-    "paso2": "Passo 2 de 5",
-    "paso3": "Passo 3 de 5",
-    "paso4": "Passo 4 de 5",
-    "paso5": "Passo 5 de 5",
+    "paso1": "Passo 1 de 6",
+    "paso2": "Passo 2 de 6",
+    "paso3": "Passo 3 de 6",
+    "paso4": "Passo 4 de 6",
+    "paso5": "Passo 5 de 6",
     "Diagnóstico inicial": "Diagnóstico inicial",
     "diag.lede": "Uma pergunta por cada resultado de aprendizagem (RA) do guia. Não conta para nada: serve para que a prática comece pelo que mais precisa.",
     "Práctica adaptativa": "Prática adaptativa",
@@ -1984,7 +1989,7 @@ Object.entries(/*I18N_X*/{
     "Fecha del examen": "Exam date",
     "Qué se valora: rúbrica": "What is assessed: rubric",
     "sim.rub": "Criteria based on the course syllabus.",
-    "Laboratorio": "Lab",
+    "Laboratorio": "Lab", "Laboratorio de la asignatura": "Course lab", "paso6": "Step 6 of 6", "Volver al laboratorio": "Back to the lab", "j6s": "Seven activities: judge cases, dig into rules, explore the legal map and hunt errors.", "Siguiente: laboratorio": "Next: lab", "Siete actividades para entrenar el oficio del historiador del Derecho.": "Seven activities to train the craft of the legal historian.",
     "pl.lede": "You are the judge. The same dispute reaches your court in five different places and times: decide which law it is judged by and in what order each source is used.",
     "ar.lede": "Today’s rules have layers, like an archaeological site. Dig into a rule in force: order its layers, discover what each one contributed and explain how its interpretation changes.",
     "Norma que vas a excavar": "Rule you are going to dig into",
@@ -2110,7 +2115,7 @@ Object.entries(/*I18N_X*/{
     "Fecha del examen": "Data do exame",
     "Qué se valora: rúbrica": "O que se avalia: rubrica",
     "sim.rub": "Critérios elaborados a partir do guia docente da unidade curricular.",
-    "Laboratorio": "Laboratório",
+    "Laboratorio": "Laboratório", "Laboratorio de la asignatura": "Laboratório da unidade curricular", "paso6": "Passo 6 de 6", "Volver al laboratorio": "Voltar ao laboratório", "j6s": "Sete atividades: julgue, escave normas, percorra o mapa jurídico e cace erros.", "Siguiente: laboratorio": "Seguinte: laboratório", "Siete actividades para entrenar el oficio del historiador del Derecho.": "Sete atividades para treinar o ofício do historiador do Direito.",
     "pl.lede": "É o juiz. O mesmo conflito chega ao seu tribunal em cinco lugares e momentos diferentes: decida com que direito se julga e por que ordem se recorre a cada fonte.",
     "ar.lede": "As normas de hoje têm camadas, como uma jazida. Escave um preceito vigente: ordene as suas camadas, descubra o que cada uma trouxe e explique como muda a sua interpretação.",
     "Norma que vas a excavar": "Norma que vai escavar",
@@ -3108,10 +3113,10 @@ ${i.o.map((o, k) => `    <answer fraction="${k === i.ok ? 100 : 0}" format="html
 
 /* ══ IusHistorIA · interfaz. Lógica pura en nucleo.js; currículo en curriculum.js ══ */
 const VERSION = '1.1.0';
-const STEPS = ['Inicio', 'Diagnóstico', 'Práctica', 'Comentario', 'Desarrollo', 'Progreso'];
+const STEPS = ['Inicio', 'Diagnóstico', 'Práctica', 'Comentario', 'Desarrollo', 'Progreso', 'Laboratorio de la asignatura'];
 const HUBS = ['Cronología', 'Profesorado', 'Cinco épocas', 'Arqueología', 'Mapa jurídico', 'Detective', '¿De qué constitución es?', 'Cortes en el aula', 'Entrevista en Cádiz'];
-const NAV = [['Empezar', 'Empieza por el diagnóstico o mira el ejemplo.'], ['Siguiente: práctica', 'Diez preguntas, una por resultado de aprendizaje.'], ['Siguiente: comentario', 'Practica todo lo que quieras: tu progreso se guarda.'], ['Siguiente: simulacro', 'Comenta un texto histórico-jurídico.'], ['Siguiente: progreso', 'Seis preguntas: eliges cuatro.'], ['Volver al inicio', 'Tu dominio estimado por resultado de aprendizaje.']];
-const RENDER = {0: pintaInicio, 1: pintaDiag, 2: pintaPrac, 3: pintaCom, 4: pintaSim, 5: pintaProg, 6: pintaCro, 7: pintaProf, 8: pintaPleito, 9: pintaArqueo, 10: pintaMapa, 11: pintaDet, 12: pintaConst, 13: pintaAula, 14: pintaEntrevista};
+const NAV = [['Empezar', 'Empieza por el diagnóstico o mira el ejemplo.'], ['Siguiente: práctica', 'Diez preguntas, una por resultado de aprendizaje.'], ['Siguiente: comentario', 'Practica todo lo que quieras: tu progreso se guarda.'], ['Siguiente: simulacro', 'Comenta un texto histórico-jurídico.'], ['Siguiente: progreso', 'Seis preguntas: eliges cuatro.'], ['Siguiente: laboratorio', 'Tu dominio estimado por resultado de aprendizaje.'], ['Volver al inicio', 'Siete actividades para entrenar el oficio del historiador del Derecho.']];
+const RENDER = {0: pintaInicio, 1: pintaDiag, 2: pintaPrac, 3: pintaCom, 4: pintaSim, 5: pintaProg, 6: () => {}, 7: pintaCro, 8: pintaProf, 9: pintaPleito, 10: pintaArqueo, 11: pintaMapa, 12: pintaDet, 13: pintaConst, 14: pintaAula, 15: pintaEntrevista};
 const GLOS = [
   ['¿Qué es IusHistorIA?', 'El sistema de práctica de la asignatura 1193 Historia del Derecho (UMH), construido a partir de su guía docente: diagnóstico, práctica adaptativa por resultado de aprendizaje, comentario de textos y simulacros de preguntas de desarrollo.'],
   ['¿Cómo elige la siguiente pregunta?', 'Por código, siempre igual ante los mismos datos: primero las preguntas que toca repasar (falladas hace unos minutos o acertadas hace días), después el resultado de aprendizaje con menor dominio, sin repetir el mismo tres veces seguidas. Encima de cada pregunta ves el motivo.'],
@@ -3645,7 +3650,7 @@ function pintaAula() {
   if ($('auV2')) $('auV2').onclick = () => { const v = lee('v2'); if (!(v.si + v.no + v.abs)) return toast(t('Escribe al menos un voto')); cur.r2 = v; cur.fase = 2; guarda(); pintaAula(); };
   if ($('auFin')) $('auFin').onclick = () => { L.au.push({id: cur.id, fecha: new Date().toISOString(), r1: cur.r1, r2: cur.r2}); L.auCur = null; guardaYa(); toast(t('Sesión guardada en este navegador')); pintaAula(); };
   if ($('auCan')) $('auCan').onclick = () => { if (!confirmaSuave()) return; L.auCur = null; guarda(); pintaAula(); };
-  if ($('auFull')) $('auFull').onclick = () => { const s = document.querySelector('.screen[data-step="13"]'); if (document.fullscreenElement) document.exitFullscreen(); else if (s.requestFullscreen) s.requestFullscreen().catch(() => toast(t('El navegador no permite la pantalla completa aquí'))); };
+  if ($('auFull')) $('auFull').onclick = () => { const s = document.querySelector('.screen[data-step="14"]'); if (document.fullscreenElement) document.exitFullscreen(); else if (s.requestFullscreen) s.requestFullscreen().catch(() => toast(t('El navegador no permite la pantalla completa aquí'))); };
   $('auLog').innerHTML = L.au.length ? `<div class="table-wrap"><table><thead><tr><th>${esc(t('Fecha'))}</th><th>${esc(t('Dilema'))}</th><th>${esc(t('1.ª votación (sí/no/abst.)'))}</th><th>${esc(t('2.ª votación (sí/no/abst.)'))}</th></tr></thead><tbody>${L.au.map(s => { const D = DILEMAS.find(d => d.id === s.id); return `<tr><td>${esc(new Date(s.fecha).toLocaleDateString(locale()))}</td><td>${D ? `${D.y} · ${esc(TR(D.q))}` : s.id}</td><td>${s.r1.si}/${s.r1.no}/${s.r1.abs}</td><td>${s.r2.si}/${s.r2.no}/${s.r2.abs}</td></tr>`; }).join('')}</tbody></table></div><div class="actions"><button class="btn btn-ghost btn-sm" type="button" id="auCsv">CSV</button></div><p class="help">${esc(t('Son recuentos de votos, sin nombres. Sirven como registro de la participación en clase.'))}</p>`
     : `<p class="empty">${esc(t('Aún no hay sesiones guardadas en este navegador.'))}</p>`;
   if ($('auCsv')) $('auCsv').onclick = () => dl('iushistoria_aula.csv', csvDe([t('fecha'), t('dilema'), 'si_1', 'no_1', 'abs_1', 'si_2', 'no_2', 'abs_2'], L.au.map(s => [s.fecha, s.id, s.r1.si, s.r1.no, s.r1.abs, s.r2.si, s.r2.no, s.r2.abs])), 'text/csv;charset=utf-8');
